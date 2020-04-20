@@ -1,0 +1,355 @@
+/* CSS files add styling rules to your content */
+
+@font-face {
+  font-family: "agrandir";
+  src: url("https://cdn.glitch.com/48148101-fd03-4307-bb35-8b499426094f%2FAgrandir-WideLight.otf?v=1585937971765");
+}
+
+body,
+html {
+  font-family: "agrandir", sans-serif;
+  margin: 0px;
+  background-color: #F2F2F2;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  position: fixed;
+}
+
+.col {
+  flex: 50%;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  padding: 10px 72px 10px 72px;
+  background-color: #8BDAAA;
+}
+
+.intro {
+  font-size: 72px;
+  padding: 80px 72px 20px 72px;
+}
+
+.cr {
+  display: flex;
+}
+
+.contact {
+  display: flex;
+  flex: 50%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  padding: 20px 72px 20px 72px;
+  font-size: 48px;
+  background-color: #8BDAAA;
+}
+
+.project-header {
+  font-size: 72px;
+  padding: 40px 72px 20px 72px;
+}
+
+.home-projects {
+  display: flex;
+  margin: 0px 72px 20px 72px;
+}
+
+.work {
+  display: flex;
+  flex: 50%;
+  margin: 0px 10px 0px 10px;
+  border: 1px solid black;
+}
+
+.work-a {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+  border-right: 1px solid black;
+}
+
+.work-a1 {
+  border-bottom: 1px solid black;
+  height: 40px;
+  font-size: 36px;
+  padding: 30px;
+  margin: 0 none;
+}
+
+.work-a1long {
+  border-bottom: 1px solid black;
+  height: 100px;
+  font-size: 36px;
+  padding-left: 30px;
+  padding-top: 15px;
+  margin: 0 none;
+}
+
+.work-a2 {
+  height: 90px;
+  font-size: 24px;
+  padding: 30px;
+}
+
+.work-b {
+  flex: 50%;
+}
+
+.footer {
+  border-top: 1px solid black;
+  margin-top: 50px;
+  padding: 40px 72px 40px 72px;
+}
+
+/* project pages */
+
+.project-title {
+  font-size: 72px;
+  padding: 80px 72px 20px 72px;
+}
+
+.project-intro {
+  display: flex;
+}
+
+.project-type {
+  display: flex;
+  flex: 50%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  padding: 20px 72px 20px 72px;
+  font-size: 24px;
+}
+
+.project-type2 {
+  display: flex;
+  flex: 50%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  padding: 20px 72px 20px 72px;
+  font-size: 18px;
+}
+
+.project-content {
+  padding: 60px 62px 0px 62px;
+  display: block;
+}
+
+.half-img-container {
+  display: flex;
+}
+
+.full-img {
+  display: block;
+  margin: 0px 10px 10px 10px;
+}
+
+.half-img {
+  flex: 50%;
+  height: auto;
+  margin: 0px 10px 10px 10px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .intro,
+  .project-header {
+    font-size: 48px;
+  }
+
+  .contact {
+    font-size: 24px;
+    padding: 20px 20px 20px 72px;
+  }
+
+  .work-a1 {
+    height: 24px;
+    font-size: 24px;
+    padding: 18px;
+  }
+
+  .work-a1long {
+    height: 70px;
+    font-size: 24px;
+    padding-left: 18px;
+    padding-top: 12px;
+  }
+
+  .work-a2 {
+    font-size: 18px;
+    padding: 18px;
+    height: 60px;
+  }
+
+  .project-title {
+    font-size: 48px;
+    padding: 80px 72px 20px 72px;
+  }
+
+  .project-type {
+    font-size: 18px;
+  }
+
+  .project-content {
+    padding: 30px 62px 0px 62px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .col {
+    padding: 10px 50px 10px 50px;
+  }
+
+  .intro {
+    padding: 70px 50px 20px 50px;
+    font-size: 36px;
+  }
+
+  .project-header {
+    font-size: 36px;
+    padding: 20px 20px 20px 50px;
+  }
+
+  .cr {
+    display: block;
+  }
+
+  .contact {
+    display: block;
+    padding: 20px 20px 20px 50px;
+    font-size: 24px;
+    margin-top: -1px;
+  }
+
+  .home-projects {
+    display: block;
+    margin: 0px 50px 20px 50px;
+  }
+
+  .work {
+    margin: 0px 0px 20px 0px;
+  }
+
+  .work-a1 {
+    font-size: 24px;
+  }
+
+  .work-a2 {
+    font-size: 18px;
+  }
+  
+  .project-intro {
+    display: block;
+  }
+  
+  .project-title {
+    font-size: 36px;
+    padding: 60px 50px 10px 50px;
+  }
+
+  .project-type {
+    font-size: 18px;
+    padding: 20px 50px 20px 50px;
+    margin-top: -1px;
+    background-color: #F2F2F2;
+  }
+
+  .project-type2 {
+    margin-top: -1px;
+    background-color: #F2F2F2;
+    padding: 20px 50px 20px 50px;
+  }
+  
+  .project-content {
+    padding: 30px 40px 0px 40px;
+  }
+  
+   .half-img-container {
+    display: block;
+  }
+
+  .footer {
+    border-top: 1px solid black;
+    margin-top: 30px;
+    padding: 20px 50px 20px 50px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .intro {
+    font-size: 24px;
+    padding: 70px 30px 20px 30px;
+  }
+
+  .project-header {
+    font-size: 24px;
+    padding: 30px 30px 20px 30px;
+  }
+
+  .col {
+    padding: 10px 30px 10px 30px;
+  }
+
+  .contact {
+    display: block;
+    padding: 10px 30px 10px 30px;
+    font-size: 18px;
+    margin-top: -1px;
+  }
+
+  .home-projects {
+    margin: 0px 30px 20px 30px;
+    display: block;
+  }
+
+  .project-title {
+    font-size: 36px;
+    padding: 60px 30px 10px 30px;
+  }
+  
+  .work-a1 {
+    font-size: 20px;
+  }
+  
+  .work-a2 {
+    font-size: 14px;
+  }
+  
+  .work-a1long {
+    font-size: 20px;
+    height: 60px;
+  }
+  
+
+  .project-type {
+    font-size: 16px;
+    padding: 20px 30px 20px 30px;
+  }
+  
+  .project-type2 {
+    font-size: 16px;
+    margin-top: -1px;
+    background-color: #F2F2F2;
+    padding: 20px 30px 20px 30px;
+  }
+
+  .project-content {
+    padding: 30px 20px 0px 20px;
+  }
+  
+
+  .footer {
+    border-top: 1px solid black;
+    margin-top: 30px;
+    padding: 20px 30px 20px 30px;
+  }
+}
