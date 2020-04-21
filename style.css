@@ -11,6 +11,8 @@ html {
   margin: 0px;
   background-color: #F2F2F2;
   font-size: 18px;
+   cursor: url("https://cdn.glitch.com/4154bd98-c21d-4bf8-bdd0-3cff0c2d33ff%2Fcursor2.svg?v=1587491668618"),
+    auto;
 }
 
 a {
@@ -48,7 +50,7 @@ a {
   border-bottom: 1px solid black;
   border-right: 1px solid black;
   padding: 20px 72px 20px 72px;
-  font-size: 48px;
+  font-size: 36px;
   background-color: #8BDAAA;
 }
 
@@ -67,45 +69,46 @@ a {
   flex: 50%;
   margin: 0px 10px 0px 10px;
   border: 1px solid black;
+  background: white;
+}
+
+.work:hover {
+  background: rgba(139, 218, 171, 0.2)
+}
+
+.work:hover img{
+  opacity: 0.5;
 }
 
 .work-a {
-  display: flex;
-  flex-direction: column;
-  flex: 50%;
+  width: 50%;
   border-right: 1px solid black;
+  padding: none;
 }
 
 .work-a1 {
   border-bottom: 1px solid black;
-  height: 40px;
   font-size: 36px;
-  padding: 30px 0px 30px 30px;
+  padding: 25px 0px 25px 25px;
   margin: 0 none;
 }
 
-.work-a1long {
-  border-bottom: 1px solid black;
-  height: 90px;
-  font-size: 36px;
-  padding: 15px 0px 15px 30px;
-  margin: 0 none;
-}
 
 .work-a2 {
   height: 90px;
   font-size: 24px;
-  padding: 30px;
+  padding: 25px 0px 0px 25px;
+  
 }
 
 .work-b {
-  flex: 50%;
+  display: inline-block;
+  width: 50%;
 }
 
-.img{
+.img {
   width: 100%;
 }
-
 
 .footer {
   border-top: 1px solid black;
@@ -164,6 +167,15 @@ a {
   margin: 0px 10px 10px 10px;
 }
 
+ .video-mobile{
+    display: none;
+  }
+
+ .video-desktop{
+    display: block;
+  }
+
+
 @media only screen and (max-width: 1100px) {
   .intro,
   .project-header {
@@ -176,17 +188,16 @@ a {
   }
 
   .work-a1 {
-    height: 24px;
     font-size: 24px;
     padding: 18px;
   }
 
-  .work-a1long {
-    height: 70px;
+/*   .work-a1long {
+    height: 60px;
     font-size: 24px;
     padding-left: 18px;
     padding-top: 12px;
-  }
+  } */
 
   .work-a2 {
     font-size: 18px;
@@ -206,6 +217,15 @@ a {
   .project-content {
     padding: 30px 62px 0px 62px;
   }
+  
+  .video-desktop{
+    display: none;
+  }
+  
+  .video-mobile{
+    display: block;
+  }
+  
 }
 
 @media only screen and (max-width: 900px) {
@@ -250,11 +270,11 @@ a {
   .work-a2 {
     font-size: 18px;
   }
-  
+
   .project-intro {
     display: block;
   }
-  
+
   .project-title {
     font-size: 36px;
     padding: 60px 50px 10px 50px;
@@ -272,12 +292,12 @@ a {
     background-color: #F2F2F2;
     padding: 20px 50px 20px 50px;
   }
-  
+
   .project-content {
     padding: 30px 40px 0px 40px;
   }
-  
-   .half-img-container {
+
+  .half-img-container {
     display: block;
   }
 
@@ -319,26 +339,25 @@ a {
     font-size: 36px;
     padding: 60px 30px 10px 30px;
   }
-  
+
   .work-a1 {
     font-size: 20px;
   }
-  
+
   .work-a2 {
     font-size: 14px;
   }
-  
-  .work-a1long {
+
+/*   .work-a1long {
     font-size: 20px;
-    height: 60px;
-  }
-  
+    height: 50px;
+  } */
 
   .project-type {
     font-size: 16px;
     padding: 20px 30px 20px 30px;
   }
-  
+
   .project-type2 {
     font-size: 16px;
     margin-top: -1px;
@@ -349,7 +368,6 @@ a {
   .project-content {
     padding: 30px 20px 0px 20px;
   }
-  
 
   .footer {
     border-top: 1px solid black;
