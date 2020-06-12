@@ -11,19 +11,22 @@ html {
   margin: 0px;
   background-color: #F2F2F2;
   font-size: 18px;
-   cursor: url("https://cdn.glitch.com/4154bd98-c21d-4bf8-bdd0-3cff0c2d33ff%2Fcursor2.svg?v=1587491668618"),
+     cursor: url("https://cdn.glitch.com/4154bd98-c21d-4bf8-bdd0-3cff0c2d33ff%2Fcursor2.svg?v=1587491668618"),
     auto;
 }
 
 a {
   text-decoration: none;
   color: black;
+     cursor: url("https://cdn.glitch.com/4154bd98-c21d-4bf8-bdd0-3cff0c2d33ff%2Fcursor2.svg?v=1587491668618"),
+    auto;
 }
 
 .nav {
   display: flex;
   width: 100%;
   position: fixed;
+  z-index: 999;
 }
 
 .col {
@@ -35,7 +38,7 @@ a {
 }
 
 .intro {
-  font-size: 72px;
+  font-size: 54px;
   padding: 80px 72px 20px 72px;
 }
 
@@ -50,12 +53,12 @@ a {
   border-bottom: 1px solid black;
   border-right: 1px solid black;
   padding: 20px 72px 20px 72px;
-  font-size: 36px;
+  font-size: 24px;
   background-color: #8BDAAA;
 }
 
 .project-header {
-  font-size: 72px;
+  font-size: 54px;
   padding: 40px 72px 20px 72px;
 }
 
@@ -69,14 +72,13 @@ a {
   flex: 50%;
   margin: 0px 10px 0px 10px;
   border: 1px solid black;
-  background: white;
 }
 
 .work:hover {
-  background: rgba(139, 218, 171, 0.2)
+  background: rgba(139, 218, 171, 0.2);
 }
 
-.work:hover img{
+.work:hover img {
   opacity: 0.5;
 }
 
@@ -88,17 +90,15 @@ a {
 
 .work-a1 {
   border-bottom: 1px solid black;
-  font-size: 36px;
-  padding: 30px 0px 30px 40px;
+  font-size: 24px;
+  padding: 30px 0px 30px 30px;
   margin: 0 none;
 }
 
-
 .work-a2 {
   height: 90px;
-  font-size: 24px;
+  font-size: 18px;
   padding: 30px 0px 0px 30px;
-  
 }
 
 .work-b {
@@ -110,17 +110,47 @@ a {
   width: 100%;
 }
 
+.smartie-small {
+  padding-left: 10%;
+}
+
+.zest-small {
+  padding-left: 15%;
+}
+
+.ladle-small {
+  padding-left: 20%;
+  padding-top: 20%;
+}
+
+.bee-small {
+  padding-left: 15%;
+}
+
+.bloom-small {
+  padding-left: 10%;
+  padding-top: 10%;
+  transform: rotate(20deg);
+}
+
 .footer {
   border-top: 1px solid black;
   margin-top: 50px;
-  padding: 40px 72px 40px 72px;
+  padding: 30px 72px 30px 72px;
+  background-color: #8BDAAA;
+}
+
+.social-media {
+  text-align: right;
+  margin-top: -25px;
 }
 
 /* project pages */
 
 .project-title {
-  font-size: 72px;
+  font-size: 50px;
   padding: 80px 72px 20px 72px;
+  border-bottom: 1px solid black;
 }
 
 .project-intro {
@@ -128,27 +158,19 @@ a {
 }
 
 .project-type {
-  display: flex;
   flex: 50%;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
-  padding: 20px 72px 20px 72px;
-  font-size: 24px;
+  padding: 50px 150px 0px 150px;
+  font-size: 18px;
 }
 
-.project-type2 {
-  display: flex;
+.project-type-2 {
   flex: 50%;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
-  padding: 20px 72px 20px 72px;
+  padding: 50px 150px 0px 0px;
   font-size: 18px;
 }
 
 .project-content {
-  padding: 60px 62px 0px 62px;
+  padding: 60px 140px 0px 140px;
   display: block;
 }
 
@@ -167,14 +189,22 @@ a {
   margin: 0px 10px 10px 10px;
 }
 
- .video-mobile{
-    display: none;
-  }
-
- .video-desktop{
-    display: block;
-  }
-
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 @media only screen and (max-width: 1100px) {
   .intro,
@@ -191,13 +221,6 @@ a {
     font-size: 24px;
     padding: 18px;
   }
-
-/*   .work-a1long {
-    height: 60px;
-    font-size: 24px;
-    padding-left: 18px;
-    padding-top: 12px;
-  } */
 
   .work-a2 {
     font-size: 18px;
@@ -217,15 +240,6 @@ a {
   .project-content {
     padding: 30px 62px 0px 62px;
   }
-  
-  .video-desktop{
-    display: none;
-  }
-  
-  .video-mobile{
-    display: block;
-  }
-  
 }
 
 @media only screen and (max-width: 900px) {
@@ -347,11 +361,6 @@ a {
   .work-a2 {
     font-size: 14px;
   }
-
-/*   .work-a1long {
-    font-size: 20px;
-    height: 50px;
-  } */
 
   .project-type {
     font-size: 16px;
